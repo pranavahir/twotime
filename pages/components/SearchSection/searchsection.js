@@ -21,7 +21,7 @@ export default function SearchSection(){
                                         <i className="fas fa-location-arrow bficon"></i>
                                         <div className="form-group mb-0">
                                             <input type="text" className="form-control" placeholder="Your Location"/> 
-                                            <a className="current-loc-icon current_location" href="javascript:void(0);"><i className="fas fa-crosshairs"></i></a>
+                                            <a className="current-loc-icon current_location" ><i className="fas fa-crosshairs"></i></a>
                                         </div>
                                     </div>
                                     <div className="search-btn">

@@ -6,7 +6,7 @@ export default function Header() {
             <header className="header">
                 <nav className="navbar navbar-expand-lg header-nav">
                     <div className="navbar-header">
-                        <a id="mobile_btn" href="javascript:void(0);">
+                        <a id="mobile_btn" >
                             <span className="bar-icon">
                                 <span></span>
                                 <span></span>
@@ -17,7 +17,7 @@ export default function Header() {
                             <Image
                                 src={junkylogo}
                                 alt="Picture of the author"
-                                height={100}
+                                height={85}
                                 width={100}
                             />
                         </a>
@@ -30,7 +30,7 @@ export default function Header() {
                             <a href="index.html" className="menu-logo">
                                 <img src="assets/img/logo.png" className="img-fluid" alt="Logo" />
                             </a>
-                            <a id="menu_close" className="menu-close" href="javascript:void(0);"> <i className="fas fa-times"></i></a>
+                            <a id="menu_close" className="menu-close" > <i className="fas fa-times"></i></a>
                         </div>
                         <ul className="main-nav">
                             <li className="active has-submenu">
@@ -92,16 +92,16 @@ export default function Header() {
                                 <a href="admin/index.html" target="_blank">Admin</a>
                             </li>
                             <li>
-                                <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#provider-register">Become a Professional</a>
+                                <a  data-bs-toggle="modal" data-bs-target="#provider-register">Become a Professional</a>
                             </li>
                             <li>
-                                <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#user-register">Become a User</a>
+                                <a  data-bs-toggle="modal" data-bs-target="#user-register">Become a User</a>
                             </li>
                         </ul>
                     </div>
                     <ul className="nav header-navbar-rht">
                         <li className="nav-item">
-                            <a className="nav-link header-login" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#login_modal">Login</a>
+                            <a className="nav-link header-login"  data-bs-toggle="modal" data-bs-target="#login_modal">Login</a>
                         </li>
                     </ul>
                 </nav>
