@@ -1,4 +1,10 @@
+const {useRouter} = require('next/router')
 export default function SearchSection(){
+    const router = useRouter()
+    const SearchKeyword = (event) => {
+        event.preventDefault();
+        router.push("/search/test")
+    }
     return(
         <section className="hero-section">
         <div className="layer">
@@ -10,7 +16,7 @@ export default function SearchSection(){
                             <h3>World's Largest <span>Marketplace</span></h3>
                             <p>Search From 150 Awesome Verified Ads!</p>
                             <div className="search-box">
-                                <form action="https://html.truelysell.com/template/search.html"> 
+                                <form onSubmit={SearchKeyword}> 
                                     <div className="search-input line">
                                         <i className="fas fa-tv bficon"></i>
                                         <div className="form-group mb-0">
