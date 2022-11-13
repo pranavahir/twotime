@@ -93,7 +93,7 @@ export default function Footer(){
                     <div className="row">
                         <div className="col-md-6 col-lg-6">
                             <div className="copyright-text">
-                                <p className="mb-0">&copy; 2022 <a href="index.html">Truelysell</a>. All rights reserved.</p>
+                                <p className="mb-0">&copy; 2022 <a href="index.html">JunkyScrap</a>. All rights reserved.</p>
                             </div>
                         </div>
                         <div className="col-md-6 col-lg-6">
