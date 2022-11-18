@@ -22,13 +22,13 @@ export default function Header() {
                             />
                         </a>
                         <a href="index.html" className="navbar-brand logo-small">
-                            <img src="assets/img/logo-icon.png" className="img-fluid" alt="Logo" />
+                            {/* <img src="assets/img/logo-icon.png" className="img-fluid" alt="Logo" /> */}
                         </a>
                     </div>
                     <div className="main-menu-wrapper">
                         <div className="menu-header">
                             <a href="index.html" className="menu-logo">
-                                <img src="assets/img/logo.png" className="img-fluid" alt="Logo" />
+                                {/* <img src="assets/img/logo.png" className="img-fluid" alt="Logo" /> */}
                             </a>
                             <a id="menu_close" className="menu-close" > <i className="fas fa-times"></i></a>
                         </div>

@@ -1,10 +1,14 @@
+import { useState } from 'react';
+
 const {useRouter} = require('next/router')
-export default function SearchSection(){
+export default function ProductsSection(){
     const router = useRouter()
+    const [keyword,setKeyword] = useState("")
     const SearchKeyword = (event) => {
         event.preventDefault();
-        router.push("/search/test")
+        router.push(`/products/search?&keyword=${keyword}`)
     }
+    console.log(keyword,"keyword")
     return(
         <section className="hero-section">
         <div className="layer">
@@ -13,14 +17,14 @@ export default function SearchSection(){
                 <div className="row justify-content-center">
                     <div className="col-lg-12">
                         <div className="section-search aos" data-aos="fade-up">
-                            <h3>World's Largest <span>Marketplace</span></h3>
+                            <h3>World Largest <span>Marketplace</span></h3>
                             <p>Search From 150 Awesome Verified Ads!</p>
                             <div className="search-box">
                                 <form onSubmit={SearchKeyword}> 
                                     <div className="search-input line">
                                         <i className="fas fa-tv bficon"></i>
                                         <div className="form-group mb-0">
-                                            <input type="text" className="form-control" placeholder="What are you looking for?"/>
+                                            <input type="text" className="form-control" placeholder="What are you looking for?" onChange={(e) => setKeyword(e.target.value)}/>
                                         </div>
                                     </div>
                                     <div className="search-input">

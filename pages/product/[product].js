@@ -95,10 +95,10 @@ export default function Product() {
 														height={500} />
 												</div>
 												<div className="item">
-													<img src="assets/img/services/service-02.jpg" alt="" className="img-fluid" />
+													{/* <img src="assets/img/services/service-02.jpg" alt="" className="img-fluid" /> */}
 												</div>
 												<div className="item">
-													<img src="assets/img/services/service-02.jpg" alt="" className="img-fluid" />
+													{/* <img src="assets/img/services/service-02.jpg" alt="" className="img-fluid" /> */}
 												</div>
 											</div>
 										</div>
@@ -144,7 +144,7 @@ export default function Product() {
 														<div className="card-body">
 															<div className="review-list">
 																<div className="review-img">
-																	<img className="rounded-circle" src="assets/img/customer/user-01.jpg" alt="" />
+																	{/* <img className="rounded-circle" src="assets/img/customer/user-01.jpg" alt="" /> */}
 																</div>
 																<div className="review-info">
 																	<h5>Jeffrey Akridge</h5>
