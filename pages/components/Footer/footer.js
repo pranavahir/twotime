@@ -1,3 +1,11 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Link from "next/dist/client/link";
+import {
+	faFacebook,
+    faInstagram,
+    faTwitter,
+    faWhatsapp
+} from "@fortawesome/free-brands-svg-icons";
 export default function Footer(){
     return(
         <footer className="footer">
@@ -10,16 +18,16 @@ export default function Footer(){
                             <h2 className="footer-title">Quick Links  </h2>
                             <ul>
                                 <li>
-                                    <a href="about-us.html">About Us</a>
+                                    <Link href="https://www.junkyscrap.com">About Us</Link>
                                 </li>
                                 <li>
-                                    <a href="contact-us.html">Contact Us</a>
+                                    <Link href="https://www.junkyscrap.com">Contact Us</Link>
                                 </li>
                                 <li>
-                                    <a href="faq.html">Faq</a>
+                                    <Link href="#">Faq</Link>
                                 </li>
                                 <li>
-                                    <a href="#">Help</a>
+                                    <Link href="#">Help</Link>
                                 </li>
                             </ul>
                         </div>
@@ -29,16 +37,16 @@ export default function Footer(){
                             <h2 className="footer-title">Categories</h2>
                             <ul>
                                 <li>
-                                    <a href="search.html">Computer</a>
+                                    <Link href="/products/categories?&category=Aluminum">Aluminum</Link>
                                 </li>
                                 <li>
-                                    <a href="search.html">Interior</a>
+                                    <Link href="/products/categories?&category=Copper">Copper</Link>
                                 </li>
                                 <li>
-                                    <a href="search.html">Car Wash</a>
+                                    <Link href="/products/categories?&category=Steel">Steel</Link>
                                 </li>
                                 <li>
-                                    <a href="search.html">Cleaning</a>
+                                    <Link href="/products/categories?&category=Iron">Iron</Link>
                                 </li>
                             </ul>
                         </div>
@@ -49,10 +57,10 @@ export default function Footer(){
                             <div className="footer-contact-info">
                                 <div className="footer-address">
                                     <span><i className="far fa-building"></i></span>
-                                    <p>Mumbai, India</p>
+                                    <p>JunkyScrap, Mumbai, India</p>
                                 </div>
-                                <p><i className="fas fa-headphones"></i> 00000000</p>
-                                <p className="mb-0"><i className="fas fa-envelope"></i> <a href="https://html.truelysell.com/cdn-cgi/l/email-protection" className="__cf_email__" data-cfemail="5f2b2d2a3a33262c3a33331f3a273e322f333a713c3032">widski.com</a></p>
+                                <p><i className="fas fa-headphones"></i> +91 79770 38084</p>
+                                <p className="mb-0"><i className="fas fa-envelope"></i> <Link href="https://html.truelysell.com/cdn-cgi/l/email-protection" className="__cf_email__" data-cfemail="5f2b2d2a3a33262c3a33331f3a273e322f333a713c3032">sahilshah@widski.com</Link></p>
                             </div>
                         </div>
                     </div>
@@ -62,16 +70,34 @@ export default function Footer(){
                             <div className="social-icon">
                                 <ul>
                                     <li>
-                                        <a href="#" target="_blank"><i className="fab fa-facebook-f"></i> </a>
+                                        <Link href="#" target="_blank">
+                                                    <FontAwesomeIcon
+													icon={faFacebook}
+													style={{ fontSize: 40,color:"#00008B" }}
+												/> </Link>
                                     </li>
                                     <li>
-                                        <a href="#" target="_blank"><i className="fab fa-twitter"></i> </a>
+                                        <Link href="#" target="_blank">
+                                        <FontAwesomeIcon
+													icon={faTwitter}
+													style={{ fontSize: 40 ,color:"#1DA1F2"}}
+												/>  </Link>
                                     </li>
                                     <li>
-                                        <a href="#" target="_blank"><i className="fab fa-youtube"></i></a>
+                                        <Link href="#" target="_blank">
+                                        <FontAwesomeIcon
+													icon={faInstagram}
+													style={{ fontSize: 40,color:"#AA336A" }}
+												/> 
+                                        </Link>
                                     </li>
                                     <li>
-                                        <a href="#" target="_blank"><i className="fab fa-google"></i></a>
+                                        <Link href="#" target="_blank">
+                                        <FontAwesomeIcon
+													icon={faWhatsapp}
+													style={{ fontSize: 40 ,color:"green"}}
+												/> 
+                                        </Link>
                                     </li>
                                 </ul>
                             </div>
@@ -93,17 +119,17 @@ export default function Footer(){
                     <div className="row">
                         <div className="col-md-6 col-lg-6">
                             <div className="copyright-text">
-                                <p className="mb-0">&copy; 2022 <a href="index.html">JunkyScrap</a>. All rights reserved.</p>
+                                <p className="mb-0">&copy; 2022 <Link href="index.html">JunkyScrap</Link>. All rights reserved.</p>
                             </div>
                         </div>
                         <div className="col-md-6 col-lg-6">
                             <div className="copyright-menu">
                                 <ul className="policy-menu">
                                     <li>
-                                        <a href="term-condition.html">Terms and Conditions</a>
+                                        <Link href="term-condition.html">Terms and Conditions</Link>
                                     </li>
                                     <li>
-                                        <a href="privacy-policy.html">Privacy</a>
+                                        <Link href="privacy-policy.html">Privacy</Link>
                                     </li>
                                 </ul>
                             </div>

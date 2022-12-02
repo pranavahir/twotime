@@ -90,7 +90,10 @@ export default function Products(){
 											<h4 className="filter-title">Categories</h4>
 											<select className="form-control form-control selectbox select form-select" onChange={(e) => setCategory(e.target.value)}>
 												<option>All Categories</option>
-												<option>Electronics</option>
+												<option>Aluminum</option>
+												<option>Copper</option>
+												<option>Steel</option>
+												<option>Iron</option>
 											</select>
 										</div>
 										<div className="filter-list">
@@ -115,9 +118,10 @@ export default function Products(){
 							</div>
 						</div>
 						<div>
+						<div className="row" >
 							{products.map((item) => (
-								<div className="row" key={item._id.toString()}>
-								<div className="col-lg-4 col-md-6">
+								
+								<div className="col-lg-4 col-md-6" key={item._id.toString()}>
 									<div className="service-widget">
 										<div className="service-img">
 											<a href={`/product/${item._id}`}>
@@ -156,7 +160,7 @@ export default function Products(){
 										</div>
 										<div className="service-content">
 											<h3 className="title">
-												<a href={`/product/${item._id}`}>{item.title}</a>
+												<a href={`/product/${item._id}`}>{item.title.slice(0,50) + "..."}</a>
 											</h3>
 											<div className="rating">	
 											<FontAwesomeIcon
@@ -194,8 +198,9 @@ export default function Products(){
 										</div>
 									</div>
 								</div>
-							</div>
+							
 							))}
+							</div>
 						</div>
 					</div>
 				</div>

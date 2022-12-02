@@ -1,5 +1,5 @@
 import { useState } from 'react';
-
+import Link from 'next/link';
 const {useRouter} = require('next/router')
 export default function ProductsSection(){
     const router = useRouter()
@@ -17,8 +17,8 @@ export default function ProductsSection(){
                 <div className="row justify-content-center">
                     <div className="col-lg-12">
                         <div className="section-search aos" data-aos="fade-up">
-                            <h3>World Largest <span>Marketplace</span></h3>
-                            <p>Search From 150 Awesome Verified Ads!</p>
+                            <h3>Marketplace for Selling and Buying Scraps</h3>
+                            {/* <p>Search From 150 Awesome Verified Ads!</p> */}
                             <div className="search-box">
                                 <form onSubmit={SearchKeyword}> 
                                     <div className="search-input line">
@@ -42,9 +42,9 @@ export default function ProductsSection(){
                             <div className="search-cat">
                                 <i className="fas fa-circle"></i>
                                 <span>Popular Searches</span>
-                                <a href="search.html">Electrical  Works</a>
-                                <a href="search.html">Cleaning</a>
-                                <a href="search.html">AC Repair</a>
+                                <Link href="/products/search?&keyword=Aluminum"> Aluminum</Link>
+                                <Link href="/products/search?&keyword=Steel"> Steel</Link>
+                                <Link href="/products/search?&keyword=Copper"> Copper</Link>
                             </div>
                         </div>
                     </div>

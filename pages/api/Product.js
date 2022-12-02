@@ -1,7 +1,8 @@
 import axios from "axios";
 export async function GetSingleProduct(productid){
     const data = {
-        productid:productid
+        productid:productid,
+        tocountry:"India"
     }
     console.log(data,"datadata")
     const promise =  axios.post("https://www.junkyscrap.com/server/singleproduct",data)
